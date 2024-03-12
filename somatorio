@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+ 
+   double faca_somatorio(int n) {
+    double somatorio = 0;
+ 
+    for (int i = 1; i <=n; ++i) {
+        somatorio += 1.0 / i;
+    }
+    return somatorio;
+}
+ 
+int main() {
+    int n;
+    std::cin>> n;
+    std::cout << std::fixed << std:: setprecision(4) << faca_somatorio(n)<< std::endl;
+    return 0;
+}
