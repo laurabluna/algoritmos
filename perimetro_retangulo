@@ -1,0 +1,11 @@
+#include <iostream>
+ 
+int main() {
+    long long L1;
+    long long L2;
+    std::cin >> L1;
+    std::cin >> L2;
+    long long perimetro = 2 * (L1 + L2);
+    std::cout << perimetro << std::endl;
+    return 0;
+}
