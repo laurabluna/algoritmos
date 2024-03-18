@@ -1,0 +1,9 @@
+#include <iostream>
+ 
+int main() {
+    double N, X;
+    std::cin>> N >> X;
+    int media = static_cast <int> ((X/N) * 100);
+    std::cout << media << std::endl;
+    return 0;
+}
