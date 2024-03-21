@@ -1,0 +1,30 @@
+#include <iostream>
+ 
+int main() {
+  int n;
+  std::cin >> n;
+  int m[n];
+  int soma = 0;
+  int acima = 0;
+  int abaixo = 0;
+ 
+  for(int i = 0; i < n; ++i)
+      std::cin>>m[i];
+  for(int i = 0; i < n; ++i)
+      soma = soma + m[i];
+  int media = soma/n;
+  double media_dez = media * 0.1;
+  double media_m = media + media_dez;
+  double media_me = media - media_dez;
+  int media_mais = media_m;
+  int media_menos = media_me;
+ 
+  for(int i = 0; i < n; ++i)
+      if(m[i] > media_mais)
+        acima ++;
+      else if (m[i] < media_menos)
+        abaixo ++;
+  std::cout << media << std::endl;
+  std::cout << acima + abaixo << std::endl;
+  return 0;
+}
